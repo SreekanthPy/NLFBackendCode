@@ -84,7 +84,7 @@ app.get('/', async (req, res) => {
 // ADD COLUMN createddate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 // ADD COLUMN modifieddate TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 // `)
-    res.json('hello');
+    res.json(reslut?.rows||'hello');
   } catch (error) {
     console.error('Error executing SQL query', error);
     res.status(500).json({ error: 'Internal Server Error' });
