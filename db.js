@@ -32,7 +32,7 @@ const pool = new Pool({
  password: process.env.PASSWORD,
  database: process.env.DATABASE,
  host: process.env.HOST,
- port: 20362,
+ port: 10976,
  ssl: {
    rejectUnauthorized: false,  // Allow self-signed certificates
  },
